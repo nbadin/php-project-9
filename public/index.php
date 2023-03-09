@@ -15,7 +15,7 @@ AppFactory::setContainer($container);
 $app = AppFactory::create();
 
 $app->get('/', function ($request, $response) {
-    return $this->get('renderer')->render($response, 'index.phtml');
+    return $this->get('renderer')->render($response, './index.phtml');
 });
 
 $app->run();
