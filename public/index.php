@@ -18,4 +18,8 @@ $app->get('/', function ($request, $response) {
     return $this->get('renderer')->render($response, './index.phtml');
 });
 
+$app->get('/urls', function ($request, $response) {
+    return $this->get('renderer')->render($response, './sites.phtml');
+});
+
 $app->run();
