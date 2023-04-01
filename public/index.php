@@ -6,14 +6,13 @@ use Slim\Factory\AppFactory;
 use DI\Container;
 use Slim\Views\PhpRenderer;
 use Valitron\Validator;
-// use Slim\Flash\Messages;
 use Hexlet\Code\UrlRepo;
 use Hexlet\Code\Url;
 
 session_start();
 
-$dotenv = \Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
-$dotenv->load();
+// $dotenv = \Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
+// $dotenv->load();
 
 $container = new Container();
 $container->set('renderer', function () {

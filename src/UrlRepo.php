@@ -2,8 +2,6 @@
 
 namespace Hexlet\Code;
 
-require '../vendor/autoload.php';
-
 use Carbon\Carbon;
 use Hexlet\Code\Connection;
 
@@ -21,7 +19,7 @@ class UrlRepo
         $sql = 'SELECT * FROM urls ORDER BY created_at DESC';
         return $this->pdo->query($sql)->fetchAll();
     }
-    
+
     public function saveUrl(string $urlName)
     {
         $createdAt = Carbon::now();

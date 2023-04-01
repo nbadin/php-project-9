@@ -2,8 +2,6 @@
 
 namespace Hexlet\Code;
 
-require '../vendor/autoload.php';
-
 class Url
 {
     private $id;
