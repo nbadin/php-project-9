@@ -8,8 +8,8 @@ final class Connection
 
     public function connect()
     {
-        // $params = parse_url($_ENV['DATABASE_URL']);
-        $params = parse_url('postgresql://postgres:XRo0TBD2K56q11r0XBUx@containers-us-west-177.railway.app:6413/railway');
+        $params = parse_url($_ENV['DATABASE_URL']);
+        // $params = parse_url('postgresql://postgres:XRo0TBD2K56q11r0XBUx@containers-us-west-177.railway.app:6413/railway');
         if ($params === false) {
             throw new \Exception("Error reading database configuration file");
         }
