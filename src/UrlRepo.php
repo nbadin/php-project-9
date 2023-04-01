@@ -12,7 +12,7 @@ class UrlRepo
     public function __construct()
     {
         $this->pdo = Connection::get()->connect();
-        $sql = file_get_contents('./src/database.sql');
+        $sql = file_get_contents('../src/database.sql');
         $this->pdo->exec($sql);
     }
 
